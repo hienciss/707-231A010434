@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bài 2 - Đăng ký người dùng</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 Đăng ký tài khoản</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="baitap_01.html">Bài 1</a>
+      <a href="baitap_03.html">Bài 3</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="form-container">
+      <form id="register-form">
+        <div class="form-group">
+          <label for="name">Họ và tên</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <div class="checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Đồng ý với điều khoản sử dụng</label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Đăng ký</button>
+        <div id="form-alert" class="alert" style="display:none;"></div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

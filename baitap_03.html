@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bài 3 - Đồng hồ đếm ngược</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>⏱️ Đồng hồ đếm ngược 10 phút</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="baitap_01.html">Bài 1</a>
+      <a href="baitap_02.html">Bài 2</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="timer-container">
+      <div class="countdown" id="countdown-display">10:00</div>
+      <p>Thời gian sẽ bắt đầu đếm ngay khi trang được tải.</p>
+    </div>
+  </div>
+
+  <!-- Modal khi hết giờ -->
+  <div id="timeup-modal" class="modal">
+    <div class="modal-content">
+      <h2>⏰ Hết giờ!</h2>
+      <p>Thời gian 10 phút đã kết thúc.</p>
+      <button class="btn" onclick="closeModal()">Đóng</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
